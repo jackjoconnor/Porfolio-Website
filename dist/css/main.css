@@ -55,7 +55,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait_small.jpg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -127,8 +128,12 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    padding: 0.2rem 0.5rem;
+    font-size: 1.8rem; }
+    h1.sm-heading.position,
+    h2.sm-heading.position,
+    h3.sm-heading.position {
+      font-size: 2.5rem; }
 
 a {
   color: #fff;
@@ -148,7 +153,8 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      color: #fff; }
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -179,17 +185,21 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border: 3px #fff solid; }
+    .about-info .job:hover {
+      background: #eece1a;
+      color: #000;
+      border: 3px #fff solid; }
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 1.5rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
@@ -274,8 +284,15 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
+  main {
+    padding: 2rem; }
+    main#home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
