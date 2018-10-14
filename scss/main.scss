@@ -12,7 +12,11 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-display: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat',
+        'Open Sans',
+        'Roboto',
+        sans-serif;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -97,7 +101,7 @@ main {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        // border: $secondary-color 3px solid;
     }
 
     .bio {
