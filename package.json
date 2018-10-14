@@ -2,7 +2,7 @@
   "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Portfolio Website",
-  "homepage": "https://jackjoconnor.github.io/",
+  "homepage": "https://jackjoconnor.github.io/jackjoconnor.github.io",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
