@@ -57,8 +57,7 @@
       height: 250px;
       background: url("../img/portrait.png");
       background-size: cover;
-      border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -99,7 +98,8 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-display: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 400;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -171,8 +171,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border-radius: 50%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
