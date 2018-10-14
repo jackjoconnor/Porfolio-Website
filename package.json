@@ -2,11 +2,11 @@
   "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Portfolio Website",
-  // "homepage": "https://jackjoconnor.github.io/jackjoconnor.github.io",
+  "homepage": "https://jackjoconnor.github.io/Portfolio-Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-    // "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jack O'Connor",
   "license": "MIT",
