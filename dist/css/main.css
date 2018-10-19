@@ -52,12 +52,6 @@
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.png");
-      background-size: cover;
-      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -169,12 +163,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bio bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -249,10 +239,30 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  .about-info p {
+    font-size: 1.2rem;
+    text-align: left; }
+  .about-info .job {
+    font-size: 1.2rem;
+    text-align: center; }
+    .about-info .job ul {
+      list-style-type: square;
+      display: inline-block;
+      text-align: left; }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about-info p {
+    font-size: 1.1rem;
+    text-align: left; }
+  .about-info .job {
+    font-size: 1rem;
+    text-align: center; }
+    .about-info .job ul {
+      list-style-type: square;
+      display: inline-block;
+      text-align: left; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -278,13 +288,19 @@ main {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info p {
+      font-size: 1.1rem;
+      text-align: left; }
+    .about-info .job {
+      font-size: 1.0rem;
+      text-align: center; }
+      .about-info .job ul {
+        list-style-type: square;
+        display: inline-block;
+        text-align: left; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -295,6 +311,19 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 2.5rem; }
+  .about-info {
+    grid-template-areas: "bio" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+    .about-info p {
+      font-size: 0.9rem;
+      text-align: left; }
+    .about-info .job {
+      font-size: 0.9rem;
+      text-align: center; }
+      .about-info .job ul {
+        list-style-type: square;
+        display: inline-block;
+        text-align: left; }
   .projects {
     grid-template-columns: 1fr; } }
