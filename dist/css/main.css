@@ -253,6 +253,27 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .container {
+      padding-top: 5rem; }
+    main#home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+      main .lg-heading span {
+        display: inline-block; }
+    main .text-secondary {
+      font-size: 4rem; }
+    main .sm-heading {
+      font-size: 2rem; }
+      main .sm-heading.position {
+        font-size: 2rem; }
+  .about-info .bio-size {
+    font-size: 2rem; }
   .about-info p {
     font-size: 1.1rem;
     text-align: left; }
@@ -264,15 +285,38 @@ main {
       display: inline-block;
       text-align: left; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; }
+    .boxes .box-content {
+      font-size: 2rem; }
+      .boxes .box-content span {
+        font-size: 2.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
+    main .container {
+      padding-top: 5rem; }
+    main#home h1 {
+      margin-top: 10vh; }
     main .lg-heading {
+      font-size: 3rem;
       line-height: 1;
       margin-bottom: 1rem; }
+      main .lg-heading span {
+        display: inline-block; }
+    main .text-secondary {
+      font-size: 3rem; }
+    main .sm-heading {
+      font-size: 1.5rem; }
+      main .sm-heading.position {
+        font-size: 1.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -291,6 +335,8 @@ main {
   .about-info {
     grid-template-areas: "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info .bio-size {
+      font-size: 1.5rem; }
     .about-info p {
       font-size: 1.1rem;
       text-align: left; }
@@ -302,19 +348,44 @@ main {
         display: inline-block;
         text-align: left; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; }
+    .boxes .box-content {
+      font-size: 1.5rem; }
+      .boxes .box-content span {
+        display: block;
+        font-size: 2rem; } }
 
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem; }
+    main .container {
+      padding-top: 5rem; }
     main#home h1 {
       margin-top: 10vh; }
+    main span {
+      display: inline-block; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 2.5rem; }
+      font-size: 2rem; }
+    main .text-secondary {
+      font-size: 2rem; }
+    main .sm-heading {
+      font-size: 1rem; }
+      main .sm-heading.position {
+        font-size: 1rem; }
+  ul.menu-nav.show a.nav-link {
+    font-size: 1.5rem; }
   .about-info {
     grid-template-areas: "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info .bio-size {
+      font-size: 1rem; }
     .about-info p {
       font-size: 0.9rem;
       text-align: left; }
@@ -326,4 +397,15 @@ main {
         display: inline-block;
         text-align: left; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; }
+    .boxes .box-content {
+      font-size: 1rem; }
+      .boxes .box-content span {
+        display: block;
+        font-size: 1.2rem; } }
